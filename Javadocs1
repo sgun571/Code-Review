@@ -8,4 +8,4 @@ A param definition includes 3 parts: “@param” keyword itself, name of the pa
 
 Here is a real-world example of a code description. A code description is complete, if it includes a description of the code. Additionally, if attributes such as @param and @return are used in the code description, they should be complete with their names and descriptions.
 
-
+Here is an example of an INCOMPLETE code decription. Even though it includes a description of what the code does, and several attributes, the attribute @param view does not include a description of what view is. Also, the author tag does not include the author's name.
