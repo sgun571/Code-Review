@@ -1,0 +1,11 @@
+Following is the template of a code description that developers use to describe a block of programming code. A code description should start with a “/**” and end with a “*/”. Each line of the rest of the description should start with a *. 
+
+A code description includes two main parts: First, A short and comprehensive description of the code, including information such as what the code does. This may include one or more sentences and phrases and appear as one or more paragraphs as given in the template.
+
+Second, a set of standard attributes marked with @ sign. These attributes include, @param attributes that are used to  define parameters used by the code block, @return attribute that is used to define the output returned by the code block, @author attribute that is used to define the author of the code block and several others. All these attributes are optional which means they do not always have to be present in the code description. 
+
+A param definition includes 3 parts: “@param” keyword itself, name of the parameter, and a description of the parameter. A return definition includes 2 parts: “@return” keyword itself, and a description of the output being produced by the code block. All others also include 2 parts: The attribute itself and its value. For example @version followed by the version number of the code.
+
+Here is a real-world example of a code description. A code description is complete, if it includes a description of the code. Additionally, if attributes such as @param and @return are used in the code description, they should be complete with their names and descriptions.
+
+
