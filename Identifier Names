@@ -1,0 +1,45 @@
+Software are a necessity in the modern automation-driven world. There are many types of software ranging from point of sale software used in super-markets to wildlife tracking and management software used by wildlife authorities. You yourself must have used a software at some point in your life. But did you know that software often function by creating entities related to the scope of the software and making those entities communicate with each other? Let’s look at an example.
+
+The top tier contains the entity name. The second tier contains the characteristics of the entity with their type of data separated by a colon. Name and artist ID are text values such as “Elton John” and “EJ1” respectively. “Acts” is a list of acts, in other words a list of “Act” entities.
+
+The third tier of the diagram contain behaviors. Behaviors are the actions related to the entity. Behaviors can be of two types: 1) Behaviors that disclose information about the entity, and 2) Behaviors that update or modify one or more characteristics of the entity. Let’s look at the Artist example. Let’s assume that the developers have defined three behaviors for the Artist entity. The “Get Artist Acts” behavior as the name implies “gets” or “discloses” the list of acts that the artist participates in. Thus, it is a behavior of the first type. In contrast “Add act to artist” and “Generate artist ID” update the list of acts of the artist and the ID of the artist, respectively. Thus they belong to the second behavior type. 
+
+Consider a theatre booking system which allows you to book tickets to watch performances. The main entities associated with this software are the artists who perform, the acts that artists perform, the performances of acts by artists, and the theatre where the performances happen. All these entities have their own characteristics and behaviors. The characteristics and behaviors are usually determined by developers, based on the functionality expected from the software.
+
+If we consider a single artist, he or she has an ID and a name. Additionally, an artist also has a list of acts that he or she participates in. These are the characteristics of an artist.  We can represent the Artist entity using the following notation.
+
+Now that you know the connection between the entities and their characteristics and behaviors, let’s go back to looking at the relationships between the entities in a theatre booking system.  
+
+Here is the equivalent entity diagram. Take a moment to observe how relationships between the entities are represented by characteristics in this diagram.
+
+Also, have a look at the behaviors of each entity and attempt to figure out which types of behavior they are.
+
+In addition to these entities, we also need an entity to represent the theatre booking system that will work with these entities to provide the ability to book  tickets.  
+
+Often, we also need several other entities which are responsible of providing behaviors required to facilitate the ticket booking. For example, we can have separate utility entities to safely handle the errors that the software may produce, to search data, and to handle interactions between the software and its users.
+
+The names of the entities, the characteristics and the behaviors communicate the design of a software. Thus, it is important to use high-quality names. High-quality names are meaningful and specific. For example, to represent an apple which is red, the most meaningful and specific name would be “Red Apple” and not “Apple”.  Also, entity names and characteristics should be nouns or noun phrases. The behaviors should be communicated through verbs or verb phrases.
+
+Let’s have a look at the names used in our theatre booking system to determine their quality.
+
+If you read from top to bottom and left to right, the first low quality name you will find is “Act Perfs” in the “Act” entity. This name is simply meaningless. Since it is a list of performances, we could simply use “Performances” instead.
+
+The next low-quality name would be “All Perfs” in the “Theatre Booking System” entity. Again, the characteristic name is meaningless.
+
+Finally, the behavior names “seat taken” and “free seats” in the “Performance” entity are unsuitable because even though they are meaningful, they are not verbs.
+
+Let’s have a look at the utility entities as well. Both the Error Handler and Searcher have behaviors which are nouns rather than verbs. The entity name “Input” also does not clearly convey the purpose of the entity. A better name would be “Input Output Manager” because the entity handles the interactions between the software and its users .
+
+Your next task is to identify entity, characteristic, and behavior names which are of low-quality. So, look for,
+
+Entity names that are meaningless.
+Entity names that are not nouns or noun phrases.
+Entity names unsuitable to represent an entity.
+
+Characteristic names that are meaningless.
+Characteristic  names  that are not nouns or noun phrases.
+Characteristic names that do not seem to belong to the entity. 
+
+Behavior names that are meaningless.
+Behavior names that are not verbs or verb phrases.
+Behavior names that do not seem to belong to the entity.
