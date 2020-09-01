@@ -33,7 +33,8 @@ public class TmfViewerFactory {
      * Retrieves and instantiates a viewer based on his plug-in definition for a
      * specific trace type.
      *
-     * The viewer is instantiated using its 0-argument constructor.
+     * The viewer is instantiated using 
+     * its 0-argument constructor.
      *
      * @param resource
      *            The resource where to find the information about the trace
@@ -45,7 +46,7 @@ public class TmfViewerFactory {
      *         no definition was found
      *
      * @author James Blunt <j.blunt@gmail.com>
-     */
+     */ 
     protected static Object getTraceTypeElement(IResource resource, String element) {
     	String traceType = null;
         try {
@@ -76,5 +77,25 @@ public class TmfViewerFactory {
         	e.printStackTrace();
         }
         return null;
+    }
+
+    private static int Flag;
+
+
+    /**
+     * Retrieves and instantiates a viewer based on his plug-in definition for a
+     * specific trace type. It is specific to the statistics viewer.
+     *
+     * It only calls the 0-parameter constructor without performing any other
+     * initialization on the viewer.
+     *
+     * @param resource
+     *            The resource where to find the information about the trace
+     *            properties
+     * @return a new statistics viewer based on his plug-in definition, or null
+     *         if no statistics definition was found for the trace type.
+     */
+    public static TmfStatisticsViewer getStatisticsViewer(IResource resource) {
+        return (TmfStatisticsViewer) TmfViewerFactory.getTraceTypeElement(resource, TmfTraceType.STATISTICS_VIEWER_ELEM);
     }
 }
