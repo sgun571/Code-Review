@@ -33,7 +33,8 @@ public class TmfViewerFactory {
      * Retrieves and instantiates a viewer based on his plug-in definition for a
      * specific trace type.
      *
-     * The viewer is instantiated using its 0-argument constructor.
+     * The viewer is instantiated using 
+     * its 0-argument constructor.
      *
      * @param resource
      *            The resource where to find the information about the trace
@@ -45,7 +46,7 @@ public class TmfViewerFactory {
      *         no definition was found
      *
      * @author James Blunt <j.blunt@gmail.com>
-     */
+     */ 
     protected static Object getTraceTypeElement(IResource resource, String element) {
     	String traceType = null;
         try {
@@ -77,6 +78,9 @@ public class TmfViewerFactory {
         }
         return null;
     }
+
+    private static int Flag;
+
 
     /**
      * Retrieves and instantiates a viewer based on his plug-in definition for a
