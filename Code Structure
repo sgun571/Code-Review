@@ -2,6 +2,6 @@ Following is an image of programming code contained in a single programming file
 
 The entity “Act” is defined in code in terms of its characteristics and behaviors. The entity definition starts here and ends here. This optional description of the entity can be placed before the entity definition begins.
 
-Characteristics of the entity are usually defined and placed first. They may or may not be separated by single blank lines and may or may not include descriptions describing them. 
+Characteristics of the entity if any, are usually defined and placed first. They may or may not be separated by single blank lines and may or may not include descriptions describing them. 
 
 The characteristics of the entity are followed by the behaviors. The definition of a behavior is bound by a pair of opening and closing curly braces, similar to the entity definition. Also, each behavior can have its own description. 
