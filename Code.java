@@ -98,4 +98,19 @@ public class TmfViewerFactory {
     public static TmfStatisticsViewer getStatisticsViewer(IResource resource) {
         return (TmfStatisticsViewer) TmfViewerFactory.getTraceTypeElement(resource, TmfTraceType.STATISTICS_VIEWER_ELEM);
     }
+    
+     /**
+     * Ask the zip function to compute the states and then transition the state of the zipper.
+     *
+     * When no registrations are available, the zipper immediately transitions into the initial state
+     * without asking the zip function for a computation.
+     */
+    private void transitionStateThroughZipper() {
+        Collection<S> currentStates = states.values();
+        if (currentStates.isEmpty()) {
+            transitionState(initialState);
+        } else {
+            transitionState(zipWith(states.values()));
+        }
+    }
 }
