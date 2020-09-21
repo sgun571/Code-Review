@@ -1,0 +1,7 @@
+This programming code defines an entity called “artist”. Look for the keyword “class” to find the starting line of the definition.  The definition of the artist entity starts here and ends here. A piece of code that starts with an opening curly bracket and ends with a closing curly bracket is known as a “block” of code in programming. Thus, we can call the definition of the entity an “entity block”.
+
+You already know that an entity has its own characteristics and behaviors. The characteristics are usually placed first in an entity definition. Have a look at how the characteristics “artist name” and “acts” are defined. 
+
+The behaviors are usually placed after the characteristics and they have their own definitions enclosed in curly brackets, similar to the entity.  Within a behavior definition, there can be other code blocks that group programming statements for readability as well. These can be identified in two ways. The first method is by finding matching opening and closing curly braces that mark a block. The second method is to find the code lines that have the same indentation.
+
+In addition to the definitions of the entity, characteristics and behaviors, developers also may add descriptions of them in English so that other developers can conveniently understand what the code does.
